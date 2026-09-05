@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
+}
+
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+header {
+    background: #111827;
+    color: white;
+
+    padding: 22px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+header p {
+    margin-top: 5px;
+    color: #9ca3af;
+}
+
+#status {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+
+/* ============================= */
+/* MAIN */
+/* ============================= */
+
+main {
+    max-width: 1400px;
+    margin: auto;
+    padding: 30px 40px;
+}
+
+
+/* ============================= */
+/* STATISTICS */
+/* ============================= */
+
+.stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+.card {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 22px;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.06);
+}
+
+.card span {
+    display: block;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+.card strong {
+    font-size: 32px;
+}
+
+
+/* ============================= */
+/* PANEL */
+/* ============================= */
+
+.panel {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 24px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.06);
+}
+
+.panel-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.panel-header h2 {
+    font-size: 20px;
+}
+
+.panel-header p {
+    color: #6b7280;
+
+    margin-top: 5px;
+}
+
+
+/* ============================= */
+/* BUTTON */
+/* ============================= */
+
+button {
+    border: none;
+
+    background: #111827;
+
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+
+/* ============================= */
+/* TABLE */
+/* ============================= */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+
+    padding: 14px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    background: #f9fafb;
+
+    color: #6b7280;
+
+    font-size: 13px;
+
+    text-transform: uppercase;
+}
+
+td {
+    font-size: 14px;
+}
+
+
+/* ============================= */
+/* MEAL BADGES */
+/* ============================= */
+
+.meal {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+.meal.breakfast {
+    background: #fef3c7;
+}
+
+.meal.lunch {
+    background: #dcfce7;
+}
+
+.meal.dinner {
+    background: #dbeafe;
+}
+
+
+/* ============================= */
+/* STUDENTS */
+/* ============================= */
+
+.students-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(220px, 1fr));
+
+    gap: 15px;
+}
+
+.student {
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    padding: 18px;
+}
+
+.student-id {
+    font-size: 12px;
+
+    color: #6b7280;
+
+    margin-bottom: 6px;
+}
+
+.student-name {
+    font-weight: bold;
+
+    font-size: 17px;
+
+    margin-bottom: 5px;
+}
+
+.student-roll {
+    font-size: 14px;
+
+    color: #6b7280;
+}
+
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    header {
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+}
