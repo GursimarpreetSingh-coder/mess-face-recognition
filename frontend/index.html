@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Mess Face Recognition</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Mess Attendance</h1>
+            <p>Face Recognition System</p>
+        </div>
+
+        <div id="status">
+            ● System Online
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- STATISTICS -->
+
+        <section class="stats">
+
+            <div class="card">
+                <span>Total Students</span>
+                <strong id="totalStudents">0</strong>
+            </div>
+
+            <div class="card">
+                <span>Total Attendance</span>
+                <strong id="totalAttendance">0</strong>
+            </div>
+
+            <div class="card">
+                <span>Breakfast</span>
+                <strong id="breakfast">0</strong>
+            </div>
+
+            <div class="card">
+                <span>Lunch</span>
+                <strong id="lunch">0</strong>
+            </div>
+
+            <div class="card">
+                <span>Dinner</span>
+                <strong id="dinner">0</strong>
+            </div>
+
+        </section>
+
+
+        <!-- ATTENDANCE -->
+
+        <section class="panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <h2>Today's Attendance</h2>
+                    <p id="today"></p>
+                </div>
+
+                <button onclick="loadData()">
+                    Refresh
+                </button>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Name</th>
+                            <th>Roll Number</th>
+                            <th>Meal</th>
+                            <th>Time</th>
+                            <th>Confidence</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="attendanceTable">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- STUDENTS -->
+
+        <section class="panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <h2>Registered Students</h2>
+                </div>
+
+            </div>
+
+            <div id="studentsContainer"
+                 class="students-grid">
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

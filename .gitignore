@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Face datasets / biometric data
+dataset/
+embeddings/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Personal/test images
+*.jpg
+*.jpeg
+*.png
+*.webp
+
+# InsightFace cache
+.insightface/
+
+# Environment/config
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
