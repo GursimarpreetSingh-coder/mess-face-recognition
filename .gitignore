@@ -39,3 +39,5 @@ Thumbs.db
 
 # Logs
 *.log
+# Face embeddings / numpy data
+*.npy
